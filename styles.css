@@ -1,135 +1,126 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-
-body{
+body {
     background-color: aquamarine;
-    color:#1e293b;
-    
-   
-}
-.logo{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #1e293b;
 }
 
-.header{
+.logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background-color: #1e293b;
-    color: #ffffff
+    color: #ffffff;
+    width: 100%;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     gap: 1.5rem;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-.nav-list a{
+.nav-list a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
-.nav-list a:hover{
+.nav-list a:hover {
     color: #38bdf8;
 }
 
-section{
-   
-    width: 80%;
+section {
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
-   
-     
-h1{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin:50px;
-    padding: 20px;
+    padding: 20px 0;
 }
-p{
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px 0 20px 0;
+}
+
+.foto-float {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+p.estoria {
     font-family: fantasy;
     letter-spacing: 2px;
-    margin: 10px;
-    padding: 15px;
-}
-}
-
-
-.foto-float{
-float: left;
-margin-right: 20px;
-border-radius: 10px;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-footer{
-    clear:both;
-    display: flex;
-    justify-content: center;
-    font-family: fantasy;
-    padding: 3rem;
-}
-
-button{
+button {
     background-color: rgb(16, 69, 73);
+    color: #ffffff;
     padding: 12px 24px;
     font-size: 1.1rem;
     cursor: pointer;
     border-radius: 50px;
-
+    border: none;
+    clear: both;
+    display: block;
 }
 
-@media(max-width: 768px){
-
-header{
-    margin: 65px 0 0 60px;
-    flex-direction: column;
-    gap: 1rem;
-    gap: 30px; /* Aumente este valor (ex: 30px, 40px) para afastar a logo da nav */
-    padding: 20px 15px;
+footer {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    font-family: fantasy;
+    padding: 3rem 1rem;
 }
 
-p{
-    width: 648px;
-}
-section img{
-        
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-}
-
-@media(max-width:375px){
-    header{
-        margin: 32px 0 0 16px;
+/* --- RESPONSIVIDADE (Tablets e Celulares) --- */
+@media (max-width: 768px) {
+    /* Ajustes do Header */
+    .header {
         flex-direction: column;
-        gap: 30px; /* Aumente este valor (ex: 30px, 40px) para afastar a logo da nav */
-        padding: 20px 15px;
+        gap: 1rem;
+        padding: 1rem;
     }
 
-    h1{font-size: 40px;}
+    .nav-list {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-    p{
-        font-size: 20px;
-        width: 340px;
-    }
-    a{
-        font-size:20px;
-        width:251px;
-    }
-    section img{
-        width:340px;
-        height: 230px;
-        max-width: 100%;
-        height: auto;
+    /* Imagem empilhada acima do texto */
+    .foto-float {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
         display: block;
     }
 
+    /* Parágrafo 100% da largura abaixo da imagem */
+    p.estoria {
+        width: 100%;
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+
+    h1 {
+        margin: 20px 0;
+        font-size: 1.8rem;
+    }
 }
