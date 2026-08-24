@@ -40,7 +40,11 @@ body {
 .nav-list a:hover {
     color: #38bdf8;
 }
-
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre o parágrafo e o botão */
+}
 section {
     width: 90%;
     max-width: 1000px;
@@ -77,8 +81,16 @@ button {
     cursor: pointer;
     border-radius: 50px;
     border: none;
-    clear: both;
     display: block;
+    margin-top: 40px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+   
+}
+
+button:hover{
+    background-color: #09355e; 
+    color: #d9dfe9;            
+    transform: scale(1.05);
 }
 
 footer {
