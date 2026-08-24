@@ -86,6 +86,15 @@ button{
 
 header img{
     margin: 65px 0 0 60px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    flex-direction: column; /* No celular, empilha os itens */
+    gap: 15px;               /* Dá um espaço vertical entre os elementos */
+    padding: 15px 20px;      /* Reduz o espaçamento das bordas no celular */
+    text-align: center;
+
+
 }
 
 p{
@@ -95,6 +104,15 @@ p{
 @media(max-width:375px){
     header img{
         margin: 32px 0 0 16px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        flex-direction: column; /* No celular, empilha os itens */
+        gap: 15px;               /* Dá um espaço vertical entre os elementos */
+        padding: 15px 20px;      /* Reduz o espaçamento das bordas no celular */
+        text-align: center;
+
+
     }
 
     h1{font-size: 40px;}
