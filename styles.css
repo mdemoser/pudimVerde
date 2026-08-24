@@ -10,6 +10,9 @@ body{
     
    
 }
+.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 .header{
     display: flex;
@@ -84,39 +87,35 @@ button{
 
 @media(max-width: 768px){
 
-header img{
+header{
     margin: 65px 0 0 60px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    flex-direction: column; /* No celular, empilha os itens */
-    gap: 15px;               /* Dá um espaço vertical entre os elementos */
-    padding: 15px 20px;      /* Reduz o espaçamento das bordas no celular */
-    text-align: center;
-
-
+    flex-direction: column;
+    gap: 1rem;
+    gap: 30px; /* Aumente este valor (ex: 30px, 40px) para afastar a logo da nav */
+    padding: 20px 15px;
 }
 
 p{
     width: 648px;
 }
-
-@media(max-width:375px){
-    header img{
-        margin: 32px 0 0 16px;
+section img{
+        
         max-width: 100%;
         height: auto;
         display: block;
-        flex-direction: column; /* No celular, empilha os itens */
-        gap: 15px;               /* Dá um espaço vertical entre os elementos */
-        padding: 15px 20px;      /* Reduz o espaçamento das bordas no celular */
-        text-align: center;
+    }
+}
 
-
+@media(max-width:375px){
+    header{
+        margin: 32px 0 0 16px;
+        flex-direction: column;
+        gap: 30px; /* Aumente este valor (ex: 30px, 40px) para afastar a logo da nav */
+        padding: 20px 15px;
     }
 
     h1{font-size: 40px;}
-}
+
     p{
         font-size: 20px;
         width: 340px;
@@ -128,6 +127,9 @@ p{
     section img{
         width:340px;
         height: 230px;
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
 
 }
