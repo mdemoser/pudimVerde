@@ -9,9 +9,16 @@ body {
     color: #1e293b;
 }
 
-.logo {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.5rem;
+.logo-img {
+    max-height: 50px; /* Ajuste a altura que achar melhor (ex: 50px a 80px) */
+    width: auto;       /* Mantém a proporção sem distorcer a imagem */
+    display: inline-block;
+}
+
+/* Garante que o link não estique além da imagem */
+.logo-link {
+    display: inline-block;
+    cursor: auto;
 }
 
 .header {
@@ -22,6 +29,7 @@ body {
     background-color: #1e293b;
     color: #ffffff;
     width: 100%;
+  
 }
 
 .nav-list {
@@ -88,7 +96,7 @@ p.estoria {
     transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-button:hover{
+.botao:hover{
     background-color: #09355e; 
     color: #d9dfe9;            
     transform: scale(1.05);
