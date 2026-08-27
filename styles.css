@@ -73,19 +73,18 @@ p.estoria {
     line-height: 1.6;
 }
 
-button {
+.botao{
     background-color: rgb(16, 69, 73);
     color: #ffffff;
     padding: 12px 24px;
     font-size: 1.1rem;
-    cursor: pointer;
     border-radius: 50px;
+    cursor: pointer;
     border: none;
-    display: block;
+    display: inline-block;
     margin-top: 40px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-   
-}
+    }
 
 button:hover{
     background-color: #09355e; 
