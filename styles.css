@@ -122,7 +122,7 @@ footer {
   animation:
     float 3s ease-in-out infinite,
     shadow-pulse 3s ease-in-out infinite;
-  background-color: #FBF3E1;
+  background-color: #fbf3e1;
   border-radius: 100px;
 }
 
@@ -130,15 +130,10 @@ footer {
   0%,
   100% {
     transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-6px) scale(1.05);
-  }
-  0%,
-  100% {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   }
   50% {
+    transform: translateY(-6px) scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   }
 }
@@ -177,32 +172,28 @@ footer {
     margin: 20px 0;
     font-size: 1.8rem;
   }
-}
-.whatsapp-float {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  z-index: 999;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-  animation:
-    float 3s ease-in-out infinite,
-    shadow-pulse 3s ease-in-out infinite;
-  background-color: #FBF3E1;
-}
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0) scale(1);
+  .whatsapp-float {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    animation:
+      float 3s ease-in-out infinite,
+      shadow-pulse 3s ease-in-out infinite;
+    background-color: #fbf3e1;
   }
-  50% {
-    transform: translateY(-6px) scale(1.05);
-  }
-  0%,
-  100% {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  }
-  50% {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0) scale(1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+    50% {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
   }
 }
