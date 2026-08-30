@@ -1,12 +1,25 @@
+@font-face {
+  font-family: "Oleo Script";
+  src: url("fonts/Oleo_Script/OleoScript-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* html,
 body {
-  background-color: aquamarine;
+  height: 80%;
+} */
+body {
+  background-color: rgb(120, 181, 199);
   color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .logo-img {
@@ -21,14 +34,25 @@ body {
   cursor: auto;
 }
 
-.header {
+.logo-text {
+  font-family: "Oleo Script", cursive; /* Usa o nome definido no @font-face */
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: rgb(133, 95, 101);
+}
+
+.header-nav {
+  padding: 1rem 2rem;
+  background-color: rgb(128, 218, 188);
+  color: #ffffff;
+  width: 100%;
+  height: 170px;
+  clip-path: ellipse(60% 100% at 50% 0%);
+}
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #1e293b;
-  color: #ffffff;
-  width: 100%;
 }
 
 .nav-list {
@@ -38,7 +62,7 @@ body {
 }
 
 .nav-list a {
-  color: #ffffff;
+  color: #66510c;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -48,12 +72,12 @@ body {
 .nav-list a:hover {
   color: #38bdf8;
 }
-.conteudo {
+.ingredients {
   display: flex;
   flex-direction: column;
   gap: 15px; /* Espaço entre o parágrafo e o botão */
 }
-section {
+.picn-recipe {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
@@ -61,29 +85,42 @@ section {
 }
 
 h1 {
-  font-family:
-    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: url(fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
   margin: 30px 0 20px 0;
+  color: rgb(102, 45, 45);
 }
 
-.foto-float {
+.foto-pie {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-  max-width: 100%;
-  height: auto;
+  max-width: 300px;
+  height: 300px;
+  width: 300px;
 }
 
-p.estoria {
-  font-family: fantasy;
-  letter-spacing: 2px;
+.ingredients-title {
+  font-family: url(fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
   margin-bottom: 20px;
-  line-height: 1.6;
+  font-weight: 500;
+  font-size: 25px;
+  color: rgb(102, 45, 45);
 }
 
-.botao {
+.ingredients-items {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.purchase-button {
+  width: 130px;
+  text-align: center;
   background-color: rgb(16, 69, 73);
   color: #ffffff;
   padding: 12px 24px;
@@ -93,7 +130,7 @@ p.estoria {
   cursor: pointer;
   border: none;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 20px;
   transition:
     background-color 0.3s ease,
     transform 0.2s ease;
@@ -103,14 +140,6 @@ p.estoria {
   background-color: #09355e;
   color: #d9dfe9;
   transform: scale(1.05);
-}
-
-footer {
-  clear: both;
-  display: flex;
-  justify-content: center;
-  font-family: fantasy;
-  padding: 3rem 1rem;
 }
 
 .whatsapp-float {
@@ -125,7 +154,30 @@ footer {
   background-color: #fbf3e1;
   border-radius: 100px;
 }
+.main-footer {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: pink;
+  margin-top: 100px;
+}
 
+.social-links {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+  padding-left: 40px;
+}
+
+.footer-message {
+  flex: 2;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-spacer {
+  flex: 1;
+}
 @keyframes float {
   0%,
   100% {
