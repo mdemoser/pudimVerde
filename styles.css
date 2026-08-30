@@ -10,10 +10,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* html,
-body {
-  height: 80%;
-} */
+
 body {
   background-color: rgb(120, 181, 199);
   color: #1e293b;
@@ -35,7 +32,7 @@ body {
 }
 
 .logo-text {
-  font-family: "Oleo Script", cursive; /* Usa o nome definido no @font-face */
+  font-family: "Oleo Script", cursive;
   font-size: 3.5rem;
   font-weight: 600;
   color: rgb(133, 95, 101);
@@ -75,7 +72,7 @@ body {
 .ingredients {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Espaço entre o parágrafo e o botão */
+  gap: 15px;
 }
 .picn-recipe {
   width: 90%;
@@ -92,7 +89,7 @@ h1 {
 
 .foto-pie {
   float: left;
-  margin-right: 20px;
+  margin-right: 90px;
   margin-bottom: 20px;
   border-radius: 10px;
   max-width: 300px;
